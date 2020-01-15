@@ -1,0 +1,14 @@
+{
+   "1": {
+     "brightness": "light",
+     "primaryColor": "fcba03"
+   },
+   "2": {
+     "brightness": "dark",
+     "primaryColor": "bafc03"
+   },
+   "3": {
+     "brightness": "dark",
+     "primaryColor": "3503fc"
+   }
+}
