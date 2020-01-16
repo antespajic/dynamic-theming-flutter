@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:dynamic_themed_app_flutter/theme/theme_repository.dart';
+import 'package:dynamic_themed_app_flutter/theme/theme_repository/theme_repository.dart';
 import 'package:flutter/material.dart';
 
 import './bloc.dart';

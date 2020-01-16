@@ -3,9 +3,9 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'app_themes.g.dart';
 
-extension on Brightness {
-  static Brightness fromString(String brightness) {
-    switch (brightness.toLowerCase()) {
+extension _BrightnesString on String {
+  Brightness toBrightness() {
+    switch (toLowerCase()) {
       case 'light':
         return Brightness.light;
       case 'dark':
@@ -32,7 +32,7 @@ class AppTheme {
 
   AppTheme({this.brightness, this.primaryColor});
   get themeData => ThemeData(
-        brightness: Brightness.light,
+        brightness: brightness.toBrightness(),
         primaryColor: primaryColor.toColor(),
       );
 
